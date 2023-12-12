@@ -91,5 +91,70 @@ ul {
             font-size: 30px;
         }
 
-
+        th, td {
+            border-bottom: 1px solid #ccc;
+            padding: 15px;
+        }
         
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        td {
+            text-align: center;
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+        .content-1 {
+            border: 1px solid red;
+            display: inline; /* display: The display property specifies the display behavior(the type of rendering box) of an element.*/
+        }
+
+        .content-2 {
+            border: 1px solid blue;
+            display: none; /* display "none" is a value typically use with JS to show or hide elements */
+        }
+
+
+        /* Position: The position property specifies the type of positioning method used for an element(static, relative, absolute or sticky)
+        -absolute: Absolute units are generally considered to always be the same size.
+
+        -Relative units on the other hand are relative to something else, perhaps the size of the parent element's font, or the size of the viewport*/
+        .position-1 {
+            border: 1px solid red;
+            position: sticky;
+            top: 50px;
+            left: 50px;
+        }
+
+        .position-2 {
+            border: 1px solid blue;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .container {
+            position: relative;
+            width: 200px;
+            height: 2000px;
+            border: 1px solid black;
+        }
+
+        /* CSS Units: Relative units on the other hand are relative to something else, perhaps the size of the parent element's font, or the size of the viewport */
+        .em-container {
+            font-size: 20px;
+            height: 2em; /* em means relative to the font-size of the element (2em means 2 times the size of the current font) */
+        }
+
+        .em {
+            font-size: 1.5em;
+        }
+
+        .rem {
+            font-size: 3rem; /*rem: relative to font-size of the root element */
+            height: min(50vh, 600px); /*vh: relative to 1% of the height of the viewport*/
+            border: 1px solid #333;
+           /* width: 50vw; vw: relative to 1% of the width of the viewport*/
+        }
